@@ -1,201 +1,298 @@
-<html lang="en"><head>
+<!DOCTYPE html>
+<html lang="en">
+  <head>
     <meta charset="utf-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <!-- The above 3 meta tags *must* come first in the head; any other head content must come *after* these tags -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta name="description" content="">
     <meta name="author" content="">
-    <link rel="icon" href="../../favicon.ico">
+    <link rel="shortcut icon" type = "image/png" href="assets/ico/favicon.ico">
 
-    <title>Marie Urmano's Personal Website</title>
+    <title>Marie Urmano - Professional Website</title>
 
     <!-- Bootstrap core CSS -->
-    <link href="css/bootstrap.min.css" rel="stylesheet">
-
-    <!-- Just for debugging purposes. Don't actually copy these 2 lines! -->
-    <!--[if lt IE 9]><script src="../../assets/js/ie8-responsive-file-warning.js"></script><![endif]-->
-    <script src="../../assets/js/ie-emulation-modes-warning.js"></script><style type="text/css"></style>
-
-    <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
-    <!--[if lt IE 9]>
-      <script src="https://oss.maxcdn.com/html5shiv/3.7.2/html5shiv.min.js"></script>
-      <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
-    <![endif]-->
+    <link href="assets/css/bootstrap.css" rel="stylesheet">
 
     <!-- Custom styles for this template -->
-    <link href="css/carousel.css" rel="stylesheet">
+    <link href="assets/css/main.css" rel="stylesheet">
+	<link rel="stylesheet" href="assets/css/font-awesome.min.css">
+
+    <script src="assets/js/jquery.min.js"></script>
+	<script src="assets/js/Chart.js"></script>
+	<script src="assets/js/modernizr.custom.js"></script>
+	
+
+	
+    <link href='http://fonts.googleapis.com/css?family=Lato:300,400,700,300italic,400italic' rel='stylesheet' type='text/css'>
+    <link href='http://fonts.googleapis.com/css?family=Raleway:400,300,700' rel='stylesheet' type='text/css'>
+
+    <!-- HTML5 shim and Respond.js IE8 support of HTML5 elements and media queries -->
+    <!--[if lt IE 9]>
+      <script src="assets/js/html5shiv.js"></script>
+      <script src="assets/js/respond.min.js"></script>
+    <![endif]-->
   </head>
-<!-- NAVBAR
-================================================== -->
-  <body data-pinterest-extension-installed="cr1.38.4">
-    <div class="navbar-wrapper">
-      <div class="container">
 
-        <nav class="navbar navbar-default navbar-static-top">
-          <div class="container">
-            <div class="navbar-header">
-              <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar" aria-expanded="false" aria-controls="navbar">
-                <span class="sr-only">Toggle navigation</span>
-                <span class="icon-bar"></span>
-                <span class="icon-bar"></span>
-                <span class="icon-bar"></span>
-              </button>
-              <a class="navbar-brand" href="index.html">Marie Urmano</a>
-            </div>
-            <div id="navbar" class="navbar-collapse collapse">
-              <ul class="nav navbar-nav">
-                <li class="active"><a href="index.html">Home</a></li>
-                <li><a href="about.html">Personal</a></li>
-                <li class="dropdown">
-                  <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Professional <span class="caret"></span></a>
-                  <ul class="dropdown-menu">
-                    <li><a href="resume.html">Résumé</a></li>
-                    <li><a href="digport.html">Digital Portfolio</a></li>
-					<li><a href="fineport.html">Fine Art Portfolio</a></li>
-                  </ul>
-                </li>
-              </ul>
-            </div>
-          </div>
-        </nav>
-
-      </div>
-    </div>
+  <body data-spy="scroll" data-offset="0" data-target="#theMenu">
+		
+	<!-- Menu -->
+	<nav class="menu" id="theMenu">
+		<div class="menu-wrap">
+			<h1 class="logo"><a href="index.html#home"></a></h1>
+			<i class="icon-remove menu-close"></i>
+			<a href="#home" class="smoothScroll">Home</a>
+			<a href="#services" class="smoothScroll">Experience</a>
+			<a href="#portfolio" class="smoothScroll">Portfolio</a>
+			<a href="#contact" class="smoothScroll">Contact</a>
+		</div>
+		
+		<!-- Menu button -->
+		<div id="menuToggle"><i class="icon-reorder"></i></div>
+	</nav>
 
 
-    <!-- Carousel
-    ================================================== -->
-<div id="carousel-example-generic" class="carousel slide" data-ride="carousel">
-  <!-- Indicators -->
-  <ol class="carousel-indicators">
-    <li data-target="#carousel-example-generic" data-slide-to="0" class="active"></li>
-    <li data-target="#carousel-example-generic" data-slide-to="1"></li>
-    <li data-target="#carousel-example-generic" data-slide-to="2"></li>
-  </ol>
- 
-  <!-- Wrapper for slides -->
-  <div class="carousel-inner">
-    <div class="item active">
-      <img src="img/flamingo.jpg" alt = "flamingo" >
-      <div class="carousel-caption">
-          <h2>Welcome to my personal website!</h3>
-		  <p>The following pictures highlight my photography.</p>
-      </div>
-    </div>
-    <div class="item">
-      <img src="img/starfish.jpg" alt="starfish">
-      <div class="carousel-caption">
-      
-      </div>
-    </div>
-    <div class="item">
-      <img src="img/flower.jpg" alt="flower">
-      <div class="carousel-caption">
-       
-      </div>
-    </div>
-  </div>
- 
-  <!-- Controls -->
-  <a class="left carousel-control" href="#carousel-example-generic" role="button" data-slide="prev">
-    <span class="glyphicon glyphicon-chevron-left"></span>
-  </a>
-  <a class="right carousel-control" href="#carousel-example-generic" role="button" data-slide="next">
-    <span class="glyphicon glyphicon-chevron-right"></span>
-  </a>
-</div> <!-- Carousel -->
+	
+	<!-- ========== HEADER SECTION ========== -->
+	<section id="home" name="home"></section>
+	<div id="headerwrap">
+		<div class="container">
+			<br>
+			<h1>Marie Urmano</h1>
+			<h2>Designer, Programmer, Artist.</h2>
+			<div class="row">
+				<br>
+				<br>
+				<br>
+				<div class="col-lg-6 col-lg-offset-3">
+				</div>
+			</div>
+		</div><!-- /container -->
+	</div><!-- /headerwrap -->
+	
+	
+	<!-- ========== WHITE SECTION ========== -->
+	<div id="w">
+		<div class="container">
+			<div class="row">
+				<div class="col-lg-12">
+				<h3>My name is <bold>Marie Urmano</bold> and I am a fourth year <bold>Digital Arts and Sciences</bold> student at the <bold>University of Florida College of Engineering</bold>. 
+				I have found beauty in artistic expression and design for my entire life and have carried it into the wave of technology that is today's world. 
+				I have ambitions to carry out my love for design through <bold>user experience, coding, computer modeling environments, website and application development</bold>. 
+				My portfolio depicts my artistic voyage through different types of expressive media to digital frameworks.
+				</h3>
+				</div>
+			</div>
+		</div><!-- /container -->
+	</div><!-- /w -->
+	
+	<!-- ========== SERVICES - GREY SECTION ========== -->
+	<section id="services" name="services"></section>
+	<div id="g">
+		<div class="container">
+			<div class="row">
+				<h3>MY EXPERIENCE</h3>
+				<br>
+				<br>
+				<div class="col-lg-3">
+					<img src="assets/img/wicse_img.png"><br>
+					<h4>Leadership</h4>
+					<p>I am currently the Vice President of the University of Florida's ACM-W Chapter, Women in Computer Science and Engineering.</p>
+				</div>
+				<div class="col-lg-3">
+					<img src="assets/img/gwc_img.png"><br>
+					<h4>Volunteer and Outreach</h4>
+					<p>I participate in Gainesville Women Coders, an outreach organization dedicated to teaching middle and high school students how to code.</p>
+				</div>
+				<div class="col-lg-3">
+					<img src="assets/img/pulp_img.png"><br>
+					<h4>Graphic Design</h4>
+					<p>I use Adobe Photoshop and Illustrator to create graphics and logos to represent organizations.</p>
+				</div>
+				<div class="col-lg-3">
+					<img src="assets/img/pgt_img.png"><br>
+					<h4>Internship</h4>
+					<p>I have taken roles in User Experience to improve PGT’s product assembly instructions as an intern.</p>
+				</div>
+			</div>
+		</div><!-- /container -->
+	</div><!-- /g -->
+	
+	<!-- ========== CHARTS - DARK GREY SECTION ========== -->
+	<!--<div id="dg">
+		<div class="container">
+			<div class="row">
+				<h3>SOME CHARTS</h3>
+				<br>
+				<br>
+				<div class="col-lg-4">
+					<canvas id="javascript" height="130" width="130"></canvas>
+					<br>
+					<h4>Javascript</h4>
+					<br>
+					<script>
+						var doughnutData = [
+								{
+									value: 70,
+									color:"#f85c37"
+								},
+								{
+									value : 30,
+									color : "#ecf0f1"
+								}
+							];
+							var myDoughnut = new Chart(document.getElementById("javascript").getContext("2d")).Doughnut(doughnutData);
+					</script>
+
+				</div>
+				<div class="col-lg-4">
+					<canvas id="bootstrap" height="130" width="130"></canvas>
+					<br>
+					<h4>Bootstrap</h4>
+					<br>
+					<script>
+						var doughnutData = [
+								{
+									value: 90,
+									color:"#f85c37"
+								},
+								{
+									value : 10,
+									color : "#ecf0f1"
+								}
+							];
+							var myDoughnut = new Chart(document.getElementById("bootstrap").getContext("2d")).Doughnut(doughnutData);
+					</script>
+				</div>
+				<div class="col-lg-4">
+					<canvas id="wordpress" height="130" width="130"></canvas>
+					<br>
+					<h4>Wordpress</h4>
+					<br>
+					<script>
+						var doughnutData = [
+								{
+									value: 55,
+									color:"#f85c37"
+								},
+								{
+									value : 45,
+									color : "#ecf0f1"
+								}
+							];
+							var myDoughnut = new Chart(document.getElementById("wordpress").getContext("2d")).Doughnut(doughnutData);
+					</script>
+				</div>
+			
+			</div>	
+		</div><!-- /container -->
+	<!--</div> /dg -->
+	
+	<section id="portfolio" name="portfolio"></section>
+	<div id="portfoliowrap">
+		<div class="container">
+			<div class="row">
+				<h3>PROJECT HIGHLIGHTS</h3>
+				<br>
+				<br>
+				<div class="col-lg-4 port-space">
+					<!--ISSLE-->
+					 <img src="assets/img/issle.png" class="grow" style="width:225px;height:auto;"/>
+				</div>
+				<div class="col-lg-4 port-space">
+					<!--SHADOW CAST-->
+					<img src="assets/img/shadowcast.png" class="grow" style="width:300px;height:auto;margin-top:50px;"/>
+				</div>
+				<div class="col-lg-4 port-space">
+					<!--VIRTUAL REALITY/ANDROID APP-->
+					<img src="assets/img/vr.png" class="grow" style="width:175px;height:auto;margin-top:40px;"/>
+				</div>				
+			</div>	
+		</div><!-- /container -->
+	</div><!-- /portfoliowrap -->
+
+	<!-- ========== WHITE SECTION ========== -->
+	<!--<div id="w">
+		<div class="container">
+			<div class="row">
+				<div class="col-lg-10 col-lg-offset-1">
+				</div>
+			</div>
+		</div><!-- /container -->
+	<!--</div> /w -->
+	
+	<!-- ========== ABOUT - GREY SECTION ========== -->
+	<section id="about" name="about"></section>
+	<div id="g">
+		<div class="container">
+			<div class="row">
+				<h3></h3>
+				<br>
+				<br>
+				<div class="col-lg-2"></div>
+				<div class="col-lg-8">
+				<br>
+				<br>
+				</div>
+				<div class="col-lg-2"></div>
 
 
-    <!-- Marketing messaging and featurettes
-    ================================================== -->
-    <!-- Wrap the rest of the page in another container to center all the content. -->
-
-    <div class="container marketing">
-
-      <!-- Three columns of text below the carousel -->
-      <div class="row">
-        <div class="col-lg-4">
-          <img src = "img/marie.jpg" width="140" height="140">
-          <h2>Professional Resume</h2>
-          <p>Get to know my experience in the industry and involvement in the University of Florida. </p>
-          <p><a class="btn btn-default" href="resume.html" role="button">View details »</a></p>
-        </div><!-- /.col-lg-4 -->
-        <div class="col-lg-4">
-          <img src = "img/whale.jpg" width="140" height="140">
-          <h2>2D Art Portfolio</h2>
-          <p>See my work in photography and acrylic media.</p>
-          <p><a class="btn btn-default" href="fineport.html" role="button">Dive on in »</a></p>
-        </div><!-- /.col-lg-4 -->
-        <div class="col-lg-4">
-         <img src = "img/room.jpg" width="140" height="140">
-          <h2>Digital Art and Animation</h2>
-          <p>My work in the program Autodesk Maya. Provides both animation and full renders of virtual models created from primitive objects.</p>
-          <p><a class="btn btn-default" href="digport.html" role="button">Explore my projects »</a></p>
-        </div><!-- /.col-lg-4 -->
-      </div><!-- /.row -->
-
-
-      <!-- START THE FEATURETTES -->
-
-      <hr class="featurette-divider">
-
-      <div class="row featurette">
-        <div class="col-md-7">
-          <h2 class="featurette-heading">Get to know me. <span style = "color:skyblue">I'm cool, promise.</span></h2>
-          <p class="lead">My main passions lie in creative and digital avenues. I love front end development, user interactive environments, and of course, the Gators.</p>
-        </div>
-        <div class="col-md-5">
-          <img class="featurette-image img-responsive center-block" src="img/gatorz.png" height = "500" width = "500" alt="gatorz">
-        </div>
-      </div>
-
-      <hr class="featurette-divider">
-
-      <div class="row featurette">
-        <div class="col-md-7 col-md-push-5">
-          <h2 class="featurette-heading">Come see my animations. <span class="text-muted">You'll like them for sure.</span></h2>
-          <p class="lead">My projects in Maya are honestly some of the coolest things that I have had the experience to work on.</p>
-        </div>
-        <div class="col-md-5 col-md-pull-7">
-          <img class="featurette-image img-responsive center-block" src="img/boat.jpeg" height= "500" width="500" alt="boat">
-        </div>
-      </div>
-
-      <hr class="featurette-divider">
-
-      <div class="row featurette">
-        <div class="col-md-7">
-          <h2 class="featurette-heading">And finally, learn a bit about my interests. <span style = "color:darkred">Solid.</span></h2>
-          <p class="lead">I am a complex individual. Get to know me and my intricacies.</p>
-        </div>
-        <div class="col-md-5">
-          <img class="featurette-image img-responsive center-block" src="img/me.jpg" height = "500" width = "500" alt="me tag">
-        </div>
-      </div>
-
-      <hr class="featurette-divider">
-
-      <!-- /END THE FEATURETTES -->
-
-
-      <!-- FOOTER -->
-      <footer>
-        <p class="pull-right"><a href="#">Back to top</a></p>
-        <p>© 2015 </p>
-      </footer>
-
-    </div><!-- /.container -->
-
+			</div>
+		</div><!-- /container -->
+	</div><!-- /g -->
+	
+	<!-- ========== FOOTER SECTION ========== -->
+	<section id="contact" name="contact"></section>
+	<div id="f">
+		<div class="container">
+			<div class="row">
+				<h3>I PUT MY <a class="fa heart" style = "color:red">♥</a> AND SOUL INTO EVERY PROJECT I WORK ON.
+				</h3>
+				<br>
+					<h3><b>CONTACT ME</b></h3>
+					<br>
+					<div class="col-lg-4">
+						
+						<h3>urmanom@ufl.edu</h3>
+						<br>
+					</div>
+					
+					<div class="col-lg-4">	
+						
+						<h3>(941) 735 3674</h3>
+						<br>
+					</div>
+					
+					<div class="col-lg-4">
+						 <br>
+						<p>
+							<!--<a href="index.html#"><i class="icon-facebook"></i></a>-->
+							<!--<a href="index.html#"><i class="icon-twitter"></i></a>-->
+							<a href = "assets/docs/resume.pdf"><i class="icon-paperclip"></i></a>
+							<a href="http://www.linkedin.com/in/marieurmano"><i class="icon-linkedin"></i></a>
+							<a href="https://github.com/marieurmano"><i class="icon-github"></i></a>
+							
+						</p>
+						<br>
+					</div>
+				</div>
+			</div>
+		</div><!-- /container -->
+	</div><!-- /f -->
+	
+	<div id="c">
+		<div class="container">
+			
+		
+		</div>
+	</div>
+	
+	
 
     <!-- Bootstrap core JavaScript
     ================================================== -->
     <!-- Placed at the end of the document so the pages load faster -->
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
-    <script src="js/bootstrap.min.js"></script>
-    <!-- Just to make our placeholder images work. Don't actually copy the next line! -->
-    <script src="../../assets/js/vendor/holder.min.js"></script>
-    <!-- IE10 viewport hack for Surface/desktop Windows 8 bug -->
-    <script src="../../assets/js/ie10-viewport-bug-workaround.js"></script>
-  
-
-<span style="height: 20px; width: 40px; position: absolute; opacity: 0.85; z-index: 8675309; display: none; cursor: pointer; border: none; background-image: url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAACgAAAAUCAYAAAD/Rn+7AAADU0lEQVR42s2WXUhTYRjHz0VEVPRFUGmtVEaFUZFhHxBhsotCU5JwBWEf1EWEEVHQx4UfFWYkFa2biPJiXbUta33OXFtuUXMzJ4bK3Nqay7m5NeZq6h/tPQ+xU20zugjOxR/+7/O8539+5znnwMtNTExwJtMb3L/fiLv3botCSmUjeCaejTOb39AiFothfHxcFIrHY8RksZjBsckJcOIRMfFsHD/SsbExUYpnI8DR0dGUGjSb0byhEJp5Uqg5CTSzc2CQleJbMEj9/ywBcGRkJEk9DQqouEVQT1sK444yWI9UonmTjGqauVLEIlHa9x8lAMbj8SSpp0rwKGMVvg8P46vbg0C7na8z8JsMcgHe7jlEa+edRhiLy8n/TUMfu6EvLElk+U0WtGwrTrdfAGQf5J8iiK4LVzDU28t8JtMSocf8E+l68myaNFXm/6rXslLK7ay5TOunuRvZWpJuvwAYjUaTpOIWoquuAZ219RTaxKYp9BbjycoN5FvL9qH9TBX5rvoGdJythvXYSTxdtRnWylO/ZdqrLsGwszzhWQ593z2KlAwCYCQSSZJ6ehZ0W7bD9VBLgN0NCqr3qR7R2rBrL3pu3Sb/7nDlz2uy6cG0OXk0GTbZXzNp8trsPAQdTj6frlWzN2DcXZGKQQAMh8NJ6rpyHe+PnkCr/CAFdZyvpfpjuvkifLF9wIt1Wwlo0OHie1RvWrKa93RjzfzliTzPKz3ltB0/Tevmwp14wGUgHAzSOoUEwFAolFaaBSuhnslPRkJexUJtZ6v5HtUeLswl33n1BgEY5fvhs9sJ3FAiT+QYyyvoAQJuD0KBAFRTJNAuz5/s3gJgMBhMJwrVFRThM5tY5zUF/A4X1f2fvQTRLCuBreoim0YmAbqNJryvPEXeeq46kaNdkQ/1HCncbJKPs9ZSv2VHGfWsZ2hfkhKAfr8/pdxWKx4wwD69PmVfNSOL+lr2w+gYqHpWDtXt1xQ8AMlWU0e1lqLd/APRHoP8AJqWrQG9gYxcPMsvSJUvAA4MDKTUJ7MZLaVy8v+qT21tcDx/OemePr0RTkNrur4A6PP5xCgBsL+/X4wiQDpuuVxOeL1eMYmYeDY6sOp0z+B0OuHxeEQhxkJMFosJiSO/UinOI/8Pc+l7KKArAT8AAAAASUVORK5CYII=); background-color: transparent;"></span></body></html>
+	<script src="assets/js/classie.js"></script>
+    <script src="assets/js/bootstrap.min.js"></script>
+    <script src="assets/js/smoothscroll.js"></script>
+	<script src="assets/js/main.js"></script>
+</body>
+</html>
