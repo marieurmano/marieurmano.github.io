@@ -7,8 +7,9 @@
  * URL: http://blacktie.co
  */
 
-::-webkit-selection { 
-	background: #90EAE0; 
+::selection {
+	background-color: #90EAE0;
+    color: #fff;
 }
 
 body {
