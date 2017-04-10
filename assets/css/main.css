@@ -7,14 +7,6 @@
  * URL: http://blacktie.co
  */
 
-::selection {
-    background: #90EAE0;
-}
-
-::-moz-selection {
-    background: #90EAE0;
-}
-
 ::-webkit-selection { 
 	background: #90EAE0; 
 }
