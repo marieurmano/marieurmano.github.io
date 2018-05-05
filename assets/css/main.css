@@ -4,7 +4,13 @@
     color: #fff;
 }
 
+html{
+	height:100;
+	margin:0;
+}
+
 body {
+	height: 100%
   background-color: #f2f2f2;
     font-family: "Lato";
     font-weight: 300;
@@ -76,22 +82,22 @@ a:after {
    ========================================================================== */
 
 #headerwrap {
-	background: url(../img/PlantBorder1.png) no-repeat center top;
-	text-align:center;
-	background-position: center center;
-	background-size: auto auto;
+	background: url(../img/PlantBorder1.png) no-repeat;
 	padding-top: 100px;
 	padding-bottom: 180px;
+	left:0;
+	background-position: left;
+    background-repeat: no-repeat;
+    background-size: 100% auto;
 	
     -webkit-background-size: 100%;
     -moz-background-size: 100%;
     -o-background-size: 100%;
-    background-size: 90%;
 
     -webkit-background-size: cover;
     -moz-background-size: cover;
     -o-background-size: cover;
-    background-size: cover;
+    background-size: fit;
 }
 
 #headerwrap h1 {
@@ -103,8 +109,9 @@ a:after {
 }
 
 #headerwrap h2 {
-	margin-top: 170px;
-	color: white;
+	height:100%;
+	vertical-align: middle !important;
+	text-align: center;
 	font-size: 50px;
 	font-weight: 100;
 	letter-spacing: 2px;
@@ -118,17 +125,20 @@ h3{
 /* Picture Frame */
 #picturewrap {
 	background: url(../img/Frame.png) no-repeat center top;
-	text-align:center;
-	background-position: center center;
-	min-height: 500px;
-	width: 140%;
-	margin-left: -20%;
+	padding-top:70px;
+	background-attachment: relative;
+	min-height: 250px;
+	width: 100%;
 	
     -webkit-background-size: 100%;
     -moz-background-size: 100%;
     -o-background-size: 100%;
     background-size: 100%;
 
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
 }
 
 /* Portfolio Wrap */
@@ -137,7 +147,7 @@ h3{
 	padding-top:70px;
 	text-align:center;
 	background-attachment: relative;
-	background-position: center center;
+	background-position: left;
 	min-height: 500px;
 	width: 100%;
 	
@@ -154,7 +164,6 @@ h3{
 
 
 #portfoliowrap h3 {
-	color: #ffffff;
 }
 
 
